@@ -11,10 +11,38 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    func getMainQueueContext() -> NSManagedObjectContext {
+        let mainQueueContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+        mainQueueContext.persistentStoreCoordinator = self.persistentStoreCoordinator
+        return mainQueueContext
+    }
+
+    func getPrivateQueueContext() -> NSManagedObjectContext {
+        let privateQueueContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+        privateQueueContext.persistentStoreCoordinator = self.persistentStoreCoordinator
+        return privateQueueContext
+    }
+
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.contextDidSaveMainQueueContext(notification:)), name: NSNotification.Name.NSManagedObjectContextDidSave, object: self.getMainQueueContext())
+
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.contextDidSavePrivateQueueContext(notification:)), name: NSNotification.Name.NSManagedObjectContextDidSave, object: self.getPrivateQueueContext())
+    }
+
+    func contextDidSavePrivateQueueContext(notification: Notification) {
+        self.getMainQueueContext().perform { 
+            self.getMainQueueContext().mergeChanges(fromContextDidSave: notification)
+        }
+    }
+
+    func contextDidSaveMainQueueContext(notification: Notification) {
+        self.getPrivateQueueContext().perform {
+            self.getPrivateQueueContext().mergeChanges(fromContextDidSave: notification)
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -69,7 +97,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
             let url = self.applicationDocumentsDirectory.appendingPathComponent("XMLCoreData.storedata")
             do {
-                try coordinator!.addPersistentStore(ofType: NSXMLStoreType, configurationName: nil, at: url, options: nil)
+                try coordinator!.addPersistentStore(ofType: NSXMLStoreType, configurationName: nil, at: url, options: [NSMigratePersistentStoresAutomaticallyOption: true, NSInferMappingModelAutomaticallyOption: true])
             } catch {
                 // Replace this implementation with code to handle the error appropriately.
                  
@@ -167,5 +195,40 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return .terminateNow
     }
 
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.NSManagedObjectContextDidSave, object: nil)
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A1A037D1E7802ED00E69ED3 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1A037C1E7802ED00E69ED3 /* WindowController.swift */; };
+		6A1A037F1E78204600E69ED3 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1A037E1E78204500E69ED3 /* ProgressViewController.swift */; };
+		6A2F61371E75625C005C6860 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2F61361E75625C005C6860 /* NetworkManager.swift */; };
+		6A2F61391E76F358005C6860 /* subscription.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6A2F61381E76F358005C6860 /* subscription.xml */; };
+		6A2F613B1E771364005C6860 /* CollectionViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2F613A1E771364005C6860 /* CollectionViewProtocols.swift */; };
+		6A2F613E1E77139B005C6860 /* VideoCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2F613C1E77139B005C6860 /* VideoCollectionViewItem.swift */; };
+		6A2F613F1E77139B005C6860 /* VideoCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A2F613D1E77139B005C6860 /* VideoCollectionViewItem.xib */; };
+		6A2F61431E771D5A005C6860 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2F61421E771D5A005C6860 /* CustomView.swift */; };
+		6A6851D01E746B5C00AC5668 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6851CF1E746B5C00AC5668 /* File.swift */; };
+		6A9F82CE1E7DB8DD005A77AD /* subscriptionvertwo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6A9F82CD1E7DB8DD005A77AD /* subscriptionvertwo.xml */; };
 		6AEF3E741E74125000D427C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF3E731E74125000D427C8 /* AppDelegate.swift */; };
 		6AEF3E761E74125000D427C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF3E751E74125000D427C8 /* ViewController.swift */; };
 		6AEF3E791E74125000D427C8 /* XMLCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF3E771E74125000D427C8 /* XMLCoreData.xcdatamodeld */; };
 		6AEF3E7B1E74125000D427C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF3E7A1E74125000D427C8 /* Assets.xcassets */; };
 		6AEF3E7E1E74125000D427C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF3E7C1E74125000D427C8 /* Main.storyboard */; };
+		6AFAD0E51E74189F00F6D317 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAD0E41E74189F00F6D317 /* Common.swift */; };
+		A0E4DBB611FB1E9E089F4AAB /* Pods_XMLCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D5E88177F5519584E9E855 /* Pods_XMLCoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01D5E88177F5519584E9E855 /* Pods_XMLCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMLCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5101D56235770441B0FBC9 /* Pods-XMLCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLCoreData.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMLCoreData/Pods-XMLCoreData.release.xcconfig"; sourceTree = "<group>"; };
+		6A1A037B1E7744AA00E69ED3 /* ModelVers2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelVers2.xcdatamodel; sourceTree = "<group>"; };
+		6A1A037C1E7802ED00E69ED3 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		6A1A037E1E78204500E69ED3 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		6A2F61361E75625C005C6860 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6A2F61381E76F358005C6860 /* subscription.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = subscription.xml; sourceTree = "<group>"; };
+		6A2F613A1E771364005C6860 /* CollectionViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewProtocols.swift; sourceTree = "<group>"; };
+		6A2F613C1E77139B005C6860 /* VideoCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewItem.swift; sourceTree = "<group>"; };
+		6A2F613D1E77139B005C6860 /* VideoCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCollectionViewItem.xib; sourceTree = "<group>"; };
+		6A2F61421E771D5A005C6860 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		6A6851CF1E746B5C00AC5668 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		6A9F82CD1E7DB8DD005A77AD /* subscriptionvertwo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = subscriptionvertwo.xml; sourceTree = "<group>"; };
+		6A9F82CF1E7DD15F005A77AD /* ModelVers3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelVers3.xcdatamodel; sourceTree = "<group>"; };
 		6AEF3E701E74125000D427C8 /* XMLCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEF3E731E74125000D427C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AEF3E751E74125000D427C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +48,8 @@
 		6AEF3E7A1E74125000D427C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AEF3E7D1E74125000D427C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AEF3E7F1E74125000D427C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AFAD0E41E74189F00F6D317 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		FC9AAD1231D3DC4F8D1877E9 /* Pods-XMLCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLCoreData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMLCoreData/Pods-XMLCoreData.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +57,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E4DBB611FB1E9E089F4AAB /* Pods_XMLCoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31F5DC96786A77E03AEFB0CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC9AAD1231D3DC4F8D1877E9 /* Pods-XMLCoreData.debug.xcconfig */,
+				3B5101D56235770441B0FBC9 /* Pods-XMLCoreData.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3566CF437CABBF0541C499E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01D5E88177F5519584E9E855 /* Pods_XMLCoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A2F61401E7713A8005C6860 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A2F61421E771D5A005C6860 /* CustomView.swift */,
+				6A2F613D1E77139B005C6860 /* VideoCollectionViewItem.xib */,
+				6AEF3E7C1E74125000D427C8 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6A2F61411E7713E0005C6860 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A1A037E1E78204500E69ED3 /* ProgressViewController.swift */,
+				6A1A037C1E7802ED00E69ED3 /* WindowController.swift */,
+				6A2F613C1E77139B005C6860 /* VideoCollectionViewItem.swift */,
+				6A2F613A1E771364005C6860 /* CollectionViewProtocols.swift */,
+				6AEF3E751E74125000D427C8 /* ViewController.swift */,
+				6A6851CF1E746B5C00AC5668 /* File.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		6AEF3E671E74125000D427C8 = {
 			isa = PBXGroup;
 			children = (
 				6AEF3E721E74125000D427C8 /* XMLCoreData */,
+				6AEF3E851E74133900D427C8 /* Resources */,
 				6AEF3E711E74125000D427C8 /* Products */,
+				31F5DC96786A77E03AEFB0CE /* Pods */,
+				3566CF437CABBF0541C499E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,13 +126,25 @@
 		6AEF3E721E74125000D427C8 /* XMLCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				6A2F61401E7713A8005C6860 /* View */,
+				6A2F61411E7713E0005C6860 /* Controller */,
 				6AEF3E731E74125000D427C8 /* AppDelegate.swift */,
-				6AEF3E751E74125000D427C8 /* ViewController.swift */,
 				6AEF3E7A1E74125000D427C8 /* Assets.xcassets */,
-				6AEF3E7C1E74125000D427C8 /* Main.storyboard */,
 				6AEF3E7F1E74125000D427C8 /* Info.plist */,
-				6AEF3E771E74125000D427C8 /* XMLCoreData.xcdatamodeld */,
 			);
+			path = XMLCoreData;
+			sourceTree = "<group>";
+		};
+		6AEF3E851E74133900D427C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6AEF3E771E74125000D427C8 /* XMLCoreData.xcdatamodeld */,
+				6AFAD0E41E74189F00F6D317 /* Common.swift */,
+				6A2F61361E75625C005C6860 /* NetworkManager.swift */,
+				6A2F61381E76F358005C6860 /* subscription.xml */,
+				6A9F82CD1E7DB8DD005A77AD /* subscriptionvertwo.xml */,
+			);
+			name = Resources;
 			path = XMLCoreData;
 			sourceTree = "<group>";
 		};
@@ -71,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AEF3E821E74125000D427C8 /* Build configuration list for PBXNativeTarget "XMLCoreData" */;
 			buildPhases = (
+				8683A22A4757E8D5D873CF57 /* [CP] Check Pods Manifest.lock */,
 				6AEF3E6C1E74125000D427C8 /* Sources */,
 				6AEF3E6D1E74125000D427C8 /* Frameworks */,
 				6AEF3E6E1E74125000D427C8 /* Resources */,
+				2A460812091C3EDBDFAF743D /* [CP] Embed Pods Frameworks */,
+				A50798A8EE853FE14AC82DE7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +212,77 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AEF3E7B1E74125000D427C8 /* Assets.xcassets in Resources */,
+				6A2F613F1E77139B005C6860 /* VideoCollectionViewItem.xib in Resources */,
+				6A9F82CE1E7DB8DD005A77AD /* subscriptionvertwo.xml in Resources */,
+				6A2F61391E76F358005C6860 /* subscription.xml in Resources */,
 				6AEF3E7E1E74125000D427C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A460812091C3EDBDFAF743D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMLCoreData/Pods-XMLCoreData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8683A22A4757E8D5D873CF57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A50798A8EE853FE14AC82DE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMLCoreData/Pods-XMLCoreData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6AEF3E6C1E74125000D427C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A2F613B1E771364005C6860 /* CollectionViewProtocols.swift in Sources */,
+				6A1A037D1E7802ED00E69ED3 /* WindowController.swift in Sources */,
+				6A2F61371E75625C005C6860 /* NetworkManager.swift in Sources */,
+				6A1A037F1E78204600E69ED3 /* ProgressViewController.swift in Sources */,
+				6A6851D01E746B5C00AC5668 /* File.swift in Sources */,
+				6A2F61431E771D5A005C6860 /* CustomView.swift in Sources */,
+				6AFAD0E51E74189F00F6D317 /* Common.swift in Sources */,
 				6AEF3E791E74125000D427C8 /* XMLCoreData.xcdatamodeld in Sources */,
+				6A2F613E1E77139B005C6860 /* VideoCollectionViewItem.swift in Sources */,
 				6AEF3E761E74125000D427C8 /* ViewController.swift in Sources */,
 				6AEF3E741E74125000D427C8 /* AppDelegate.swift in Sources */,
 			);
@@ -248,8 +394,10 @@
 		};
 		6AEF3E831E74125000D427C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9AAD1231D3DC4F8D1877E9 /* Pods-XMLCoreData.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 365H8JYPCL;
 				INFOPLIST_FILE = XMLCoreData/Info.plist;
@@ -262,8 +410,10 @@
 		};
 		6AEF3E841E74125000D427C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5101D56235770441B0FBC9 /* Pods-XMLCoreData.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 365H8JYPCL;
 				INFOPLIST_FILE = XMLCoreData/Info.plist;
@@ -293,6 +443,7 @@
 				6AEF3E841E74125000D427C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -300,9 +451,11 @@
 		6AEF3E771E74125000D427C8 /* XMLCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				6A9F82CF1E7DD15F005A77AD /* ModelVers3.xcdatamodel */,
+				6A1A037B1E7744AA00E69ED3 /* ModelVers2.xcdatamodel */,
 				6AEF3E781E74125000D427C8 /* XMLCoreData.xcdatamodel */,
 			);
-			currentVersion = 6AEF3E781E74125000D427C8 /* XMLCoreData.xcdatamodel */;
+			currentVersion = 6A9F82CF1E7DD15F005A77AD /* ModelVers3.xcdatamodel */;
 			path = XMLCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
